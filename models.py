@@ -1,5 +1,5 @@
 from tensorflow.keras.models import Model
-from keras.layers import Input, concatenate, Conv2D, MaxPooling2D, Conv2DTranspose
+from tensorflow.python.keras.layers import Input, concatenate, Conv2D, MaxPooling2D, Conv2DTranspose
 from keras.layers import  merge, UpSampling2D, Dropout, Cropping2D
 from keras.models import Model
 from keras.models import Sequential
