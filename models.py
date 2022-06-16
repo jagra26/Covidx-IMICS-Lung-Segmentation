@@ -193,9 +193,9 @@ def simple_unet( img_rows, img_cols, N = 3):
     return model
 
 def _shortcut(_input, residual):
-    stride_width = _input._keras_shape[2] / residual._keras_shape[2]
-    stride_height = _input._keras_shape[3] / residual._keras_shape[3]
-    equal_channels = residual._keras_shape[1] == _input._keras_shape[1]
+    stride_width = _input.shape[2] / residual.shape[2]
+    stride_height = _input.shape[3] / residual.shape[3]
+    equal_channels = residual.shape[1] == _input.shape[1]
 
     shortcut = _input
     # 1 X 1 conv if shape is different. Else identity.
