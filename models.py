@@ -3,7 +3,7 @@ from keras.layers import Input, concatenate, Conv2D, MaxPooling2D, Conv2DTranspo
 from keras.layers import  merge, UpSampling2D, Dropout, Cropping2D
 from keras.models import Model
 from keras.models import Sequential
-from keras.layers import Input,concatenate,add,Activation,Conv2DTranspose,Conv2D, Convolution2D,Deconvolution2D, MaxPooling2D, ZeroPadding2D,UpSampling2D, Dropout, BatchNormalization, Flatten, Lambda
+from tensorflow.keras.layers import Input,concatenate,add,Activation,Conv2DTranspose,Conv2D, Convolution2D,Deconvolution2D, MaxPooling2D, ZeroPadding2D,UpSampling2D, Dropout, BatchNormalization, Flatten, Lambda
 from keras.layers.advanced_activations import ELU, LeakyReLU
 from keras.callbacks import ModelCheckpoint, LearningRateScheduler
 '''def actual_unet(img_rows, img_cols, N = 2):
